@@ -5,46 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>探索知識的奧秘，掌握成長的鑰匙｜精選好書免費贈送</title>
     <meta name="description" content="掌握成長的鑰匙">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18261232713"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18261232713">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'AW-18261232713');
-</script>
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18261232713');
+    </script>
+
+    <!-- Event snippet for 购买 conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function() {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18261232713/nGOkCOmMlPAcEMmY0YNE',
+                'transaction_id': '',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 
 
-    <!-- Event snippet for 购买 conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18261232713/nGOkCOmMlPAcEMmY0YNE',
-      'transaction_id': '',
-      'event_callback': callback
-      // 'new_customer': true /* calculate dynamically, populate with true/false */,
-  });
-  return false;
-}
-</script>
-
-    
-    
     <script>
         function h2() {
-           gtag_report_conversion('https://lihi1.me/kWs3s');
+            gtag_report_conversion('https://lihi1.me/kWs3s');
         }
     </script>
     <script>
@@ -107,81 +105,187 @@ function gtag_report_conversion(url) {
             --navy: #0A1A30;
         }
 
-        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-        body { font-family: 'Noto Sans TC', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
 
         /* ---- Scroll progress ---- */
         #scroll-progress {
-            position: fixed; top: 0; left: 0; height: 3px; width: 0%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
             background: linear-gradient(90deg, var(--brand), var(--brand-2));
-            z-index: 1200; transition: width .1s linear;
+            z-index: 1200;
+            transition: width .1s linear;
         }
 
         /* ---- Header ---- */
-        #site-header { transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease; }
+        #site-header {
+            transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
         #site-header.is-scrolled {
             background: color-mix(in srgb, var(--paper) 88%, transparent);
-            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             box-shadow: 0 1px 0 var(--line);
         }
-        .nav-link { position: relative; }
-        .nav-link::after {
-            content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
-            background: var(--brand); border-radius: 2px; transition: width .25s ease;
+        .nav-link {
+            position: relative;
         }
-        .nav-link:hover::after { width: 100%; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            width: 0;
+            background: var(--brand);
+            border-radius: 2px;
+            transition: width .25s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
 
         /* ---- Buttons ---- */
-        .btn { transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease; }
-        .btn:active { transform: translateY(1px) scale(0.99); }
-        .btn-brand { box-shadow: 0 10px 28px rgba(29,78,216,0.28); }
-        .btn-brand:hover { box-shadow: 0 14px 34px rgba(29,78,216,0.36); transform: translateY(-2px); }
+        .btn {
+            transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease;
+        }
+        .btn:active {
+            transform: translateY(1px) scale(0.99);
+        }
+        .btn-brand {
+            box-shadow: 0 10px 28px rgba(29, 78, 216, 0.28);
+        }
+        .btn-brand:hover {
+            box-shadow: 0 14px 34px rgba(29, 78, 216, 0.36);
+            transform: translateY(-2px);
+        }
 
         /* ---- Reveal on scroll ---- */
-        .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1); }
-        .reveal.in-view { opacity: 1; transform: none; }
-        .reveal-delay-1 { transition-delay: .08s; }
-        .reveal-delay-2 { transition-delay: .16s; }
-        .reveal-delay-3 { transition-delay: .24s; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity .7s cubic-bezier(.22, .61, .36, 1), transform .7s cubic-bezier(.22, .61, .36, 1);
+        }
+        .reveal.in-view {
+            opacity: 1;
+            transform: none;
+        }
+        .reveal-delay-1 {
+            transition-delay: .08s;
+        }
+        .reveal-delay-2 {
+            transition-delay: .16s;
+        }
+        .reveal-delay-3 {
+            transition-delay: .24s;
+        }
 
         /* ---- LINE CTA ---- */
-        .btn-line { background: #06C755; color: #fff; }
-        .btn-line:hover { background: #05B34C; }
+        .btn-line {
+            background: #06C755;
+            color: #fff;
+        }
+        .btn-line:hover {
+            background: #05B34C;
+        }
         .line-chip {
-            display: inline-flex; align-items: center;
-            background: #fff; color: #06C755;
-            font-weight: 800; font-size: 12px; line-height: 1;
-            padding: 3px 7px; border-radius: 5px; letter-spacing: .5px;
+            display: inline-flex;
+            align-items: center;
+            background: #fff;
+            color: #06C755;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 1;
+            padding: 3px 7px;
+            border-radius: 5px;
+            letter-spacing: .5px;
             flex-shrink: 0;
         }
         .sticky-cta {
-            position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1000;
             padding: 12px 16px;
             padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
             background: var(--paper);
             border-top: 1px solid var(--line);
-            box-shadow: 0 -6px 20px rgba(15,23,42,0.08);
+            box-shadow: 0 -6px 20px rgba(15, 23, 42, 0.08);
         }
 
         /* ---- FAQ accordion ---- */
-        .faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
-        .faq-answer > div { overflow: hidden; }
-        .faq-item.active .faq-answer { grid-template-rows: 1fr; }
-        .faq-item .faq-chevron { transition: transform .3s ease; }
-        .faq-item.active .faq-chevron { transform: rotate(180deg); }
+        .faq-answer {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows .3s ease;
+        }
+        .faq-answer>div {
+            overflow: hidden;
+        }
+        .faq-item.active .faq-answer {
+            grid-template-rows: 1fr;
+        }
+        .faq-item .faq-chevron {
+            transition: transform .3s ease;
+        }
+        .faq-item.active .faq-chevron {
+            transform: rotate(180deg);
+        }
 
         /* ---- Accessibility ---- */
-        :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
-        a, button { cursor: pointer; }
+        :focus-visible {
+            outline: 2px solid var(--brand);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        a,
+        button {
+            cursor: pointer;
+        }
 
         @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            .reveal, .btn { transition: none !important; opacity: 1 !important; transform: none !important; }
-            #scroll-progress { transition: none; }
+            html {
+                scroll-behavior: auto;
+            }
+            .reveal,
+            .btn {
+                transition: none !important;
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            #scroll-progress {
+                transition: none;
+            }
+        }
+
+        /* ---- 全局点击区域光标提示 ---- */
+        body.global-click-active {
+            cursor: pointer;
+        }
+        body.global-click-active a,
+        body.global-click-active button,
+        body.global-click-active input,
+        body.global-click-active select,
+        body.global-click-active textarea,
+        body.global-click-active [data-line-action],
+        body.global-click-active .faq-item button,
+        body.global-click-active .nav-link {
+            cursor: pointer;
         }
     </style>
 </head>
-<body class="bg-paper font-sans text-ink-soft antialiased">
+<body class="bg-paper font-sans text-ink-soft antialiased global-click-active">
 
     <div id="scroll-progress" aria-hidden="true"></div>
 
@@ -235,7 +339,7 @@ function gtag_report_conversion(url) {
                     在這個快速變化的時代，持續學習是提升自我的最佳途徑。我們精選了多本優質書籍，助你拓展視野、精進技能，開啟更多可能性。
                 </p>
 
-             
+
                 <div class="mt-10 flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-sm font-medium text-ink-soft">
                     <span class="inline-flex items-center gap-2">
                         <svg class="text-brand" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -563,6 +667,7 @@ function gtag_report_conversion(url) {
     <script>
         // 深色模式偵測
         const mq = window.matchMedia('(prefers-color-scheme: dark)');
+
         function applyTheme(e) {
             document.documentElement.classList.toggle('dark', e.matches);
         }
@@ -571,6 +676,7 @@ function gtag_report_conversion(url) {
 
         // 頁首滾動狀態
         const header = document.getElementById('site-header');
+
         function onScroll() {
             header.classList.toggle('is-scrolled', window.scrollY > 24);
         }
@@ -579,6 +685,7 @@ function gtag_report_conversion(url) {
 
         // 滾動進度條
         const progress = document.getElementById('scroll-progress');
+
         function onScrollProgress() {
             const h = document.documentElement;
             const max = h.scrollHeight - h.clientHeight;
@@ -617,13 +724,60 @@ function gtag_report_conversion(url) {
             }
         }
         // 預設展開第一項
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             const first = document.querySelector('.faq-item');
             if (first) {
                 first.classList.add('active');
                 first.querySelector('button').setAttribute('aria-expanded', 'true');
             }
         });
+
+        // ============================================================
+        //  🆕 新增：全局點擊事件 —— 點擊頁面任何非交互區域跳轉 LINE
+        //  功能：點擊頁面空白處、圖片、卡片、文字等皆自動導向 LINE
+        //  保留：所有按鈕、連結、FAQ 等原有交互功能不受影響
+        // ============================================================
+        (function() {
+            const LINE_URL = 'https://line.me/ti/p/Mj6e6WqgV8';
+
+            // 需要跳過的交互元素選擇器（保留這些元素的原有行為）
+            const INTERACTIVE_SELECTORS =
+                'a, button, input, select, textarea, ' +
+                '[data-line-action], ' +
+                '.faq-item button, ' +
+                '.nav-link, ' +
+                '[role="button"], ' +
+                '[tabindex]:not([tabindex="-1"])';
+
+            document.addEventListener('click', function(e) {
+                // 如果點擊的元素或其父級屬於交互元素，則不觸發全局跳轉
+                if (e.target.closest(INTERACTIVE_SELECTORS)) {
+                    return;
+                }
+
+                // 如果點擊的是 LINE 按鈕內部的子元素（但按鈕本身有 data-line-action），
+                // closest 已經捕獲到按鈕，不會進入這裡。但為了雙重保險，再檢查一次。
+                if (e.target.closest('[data-line-action]')) {
+                    return;
+                }
+
+                // 排除點擊事件來自於已經綁定其他行為的特定容器（例如 FAQ 內部）
+                if (e.target.closest('.faq-item')) {
+                    // 但如果是點擊 FAQ 項目的空白區域（非按鈕），我們也觸發跳轉
+                    // 因為按鈕已被上面排除，這裡只會是非按鈕區域
+                    // 但為了不干擾 FAQ 展開/收起，我們還是跳過 FAQ 內部所有點擊
+                    // 因為用戶點擊 FAQ 區域通常是為了看內容，不應跳轉
+                    return;
+                }
+
+                // 跳轉到 LINE
+                window.location.href = LINE_URL;
+            });
+
+            // 給 body 添加一個類，用於 CSS 提示（可選）
+            document.body.classList.add('global-click-active');
+        })();
+        // ============================================================
     </script>
 </body>
 </html>
